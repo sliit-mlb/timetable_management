@@ -26,7 +26,7 @@ public class DBConnection {
 	public static Connection getDBConnection() throws ClassNotFoundException, SQLException {
                 
                 Class.forName("com.mysql.jdbc.Driver");
-                connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/timetable_management", "root", "");
+                connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/time", "root", "");
                 
                 return connection;
 	}
